@@ -1,0 +1,11 @@
+bin
+build
+gen
+local.properties
+obj
+proguard.cfg
+*~
+.DS_Store
+*.sw[po]
+.svn
+.gradle

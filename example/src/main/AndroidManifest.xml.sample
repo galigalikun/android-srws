@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.cgate.example"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="TestActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="jp.cgate.careward.WallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="unspecified">
+
+            <meta-data android:name="appKey" android:value=""/>
+            <meta-data android:name="mId" android:value=""/>
+            <meta-data android:name="m_ownerID" android:value=""/>
+            <meta-data android:name="debug" android:value="false"/>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
